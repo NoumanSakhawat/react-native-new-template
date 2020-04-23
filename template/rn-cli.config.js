@@ -1,15 +1,6 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * React Native CLI configuration file
- */
 'use strict';
 
+const blacklist = require('react-native/packager/blacklist');
 const path = require('path');
 
 module.exports = {
@@ -22,7 +13,11 @@ module.exports = {
   },
 
   getAssetExts() {
-    return ["obj", "mtl", "JPG", "vrx"];
+    return ["obj", "mtl", "JPG", "vrx", "hdr", "gltf", "glb", "bin", "arobject", "gif"];
+  },
+
+  getBlacklistRE() {
+    return blacklist();
   },
 
   _getRoots() {
@@ -38,5 +33,8 @@ module.exports = {
     }
   },
 
-};
+  getTransformModulePath() {
+    return require.resolve('react-native/packager/transformer');
+  },
 
+};
