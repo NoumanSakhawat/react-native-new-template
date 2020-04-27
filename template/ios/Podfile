@@ -1,5 +1,7 @@
 platform :ios, '9.3'
-target 'ProjectName' do
+$projectName="ProjectName";
+
+target $projectName do
   use_frameworks!
   pod 'ViroReact', :path => '../node_modules/react-viro/ios/'
   pod 'ViroKit', :path => '../node_modules/react-viro/ios/dist/ViroRenderer/'
