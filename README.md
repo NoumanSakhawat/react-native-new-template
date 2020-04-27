@@ -8,22 +8,21 @@ This is an open source template of Augmented Reality Viro using the react-native
 # Stack Project:
 React Native, ViroReact, react-timer-mixin
 
-# Running!
 # 🎉 Building your first React Native app
 
-| npx react-native init AwesomeProject --template=https://github.com/NoumanSakhawat/react-native-new-template  | 
-| cd AwesomeProject  | 
+ npx react-native init AwesomeProject --template=https://github.com/NoumanSakhawat/react-native-new-template  <br/>
+ cd AwesomeProject  <br/> <br/>
 
 
-| Run instruction for Android  | 
-| ------------- | 
-| npx react-native run-android --variant=GvrDebug  | 
+#  Run instruction for Android  
+
+ npx react-native run-android --variant=GvrDebug  <br/><br/>
 
 
-| Run instruction for IOS  | 
-| ------------- | 
-| cd ios  |   
-| pod install  |   
-| cd ..  |   
-| Open AwesomeProject/ios/AwesomeProject.xcworkspace in Xcode or run "xed -b ios"  |   
-| Hit the Run button |   
+# Run instruction for IOS  
+
+ cd ios  <br/>
+ pod install  <br/>
+ cd ..  <br/>
+ Open AwesomeProject/ios/AwesomeProject.xcworkspace in Xcode or run "xed -b ios"  <br/>
+ Hit the Run button <br/><br/>
